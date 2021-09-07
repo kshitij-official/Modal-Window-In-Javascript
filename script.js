@@ -16,7 +16,7 @@ btnCloseModal.addEventListener('click', function () {
 });
 
 window.onkeydown = function (evt) {
-  if (evt.keyCode == '27' && !modal.classList.contains('hidden')) {
+  if ( (evt.keyCode == '27') && (!modal.classList.contains('hidden'))) {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
   }
